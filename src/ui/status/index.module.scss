@@ -1,0 +1,28 @@
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 24px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.new {
+  background: #ff890033;
+  border: 1px solid #ff8900;
+  color: #ff8900;
+}
+
+.approved {
+  background: #f0fdf4;
+  border: 1px solid #00e58f;
+  color: #00e58f;
+}
+
+.rejected {
+  background: #f64e6033;
+  border: 1px solid #f64e60;
+  color: #f64e60;
+}

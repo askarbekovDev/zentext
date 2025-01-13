@@ -1,0 +1,36 @@
+.filter {
+  width: 600px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 26px;
+  padding: 4px;
+
+  .btn {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    padding: 0 20px;
+    gap: 14px;
+    font-size: 15px;
+    color: #53545c;
+
+    &:hover {
+      border: 0.5px solid #53545c;
+    }
+  }
+
+  .active {
+    background-color: #121a21;
+    color: white;
+    border: none;
+  }
+}
