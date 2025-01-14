@@ -6,12 +6,12 @@ import Intro from '@/components/intro.tsx';
 export default function Home() {
   return (
     // <div>
-    //   <Filter />
+    // <Filter />
     //   <br />
     //   <Status state="new" /><br /><Status state="approved" /><br /><Status state="rejected" />
     //   <br />
-    //   <SearchBar />
+      <SearchBar />
     // </div>
-		<Intro />
+		// <Intro />
   );
 }

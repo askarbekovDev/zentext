@@ -1,8 +1,13 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import styles from './index.module.scss';
 import Link from 'next/link';
+import Burger from '../../../public/Burger';
+import CloseIcon from '../../../public/CloseIcon';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
     <header className={styles.header}>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -47,6 +52,50 @@ const Header = () => {
         >
           Войти UI!
         </button>
+      </div>
+      <div
+        className={styles.burger}
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        {menuOpen ? <CloseIcon /> : <Burger />}
+      </div>
+      <div className={`${styles.dropDownMenu} ${menuOpen ? styles.open : ''}`}>
+        <div className={styles.menuNavLinks}>
+          <Link
+            href="/factories"
+            className={styles.link}
+            onClick={() => setMenuOpen(false)}
+          >
+            Фабрики
+          </Link>
+          <Link
+            href="/products"
+            className={styles.link}
+            onClick={() => setMenuOpen(false)}
+          >
+            Товары
+          </Link>
+        </div>
+        <div className={styles.menuAuthBlock}>
+          <Link
+            href="/signIn"
+            className={styles.signUpLink}
+            onClick={() => setMenuOpen(false)}
+          >
+            Регистрация
+          </Link>
+          <button
+            style={{
+              width: 122,
+              height: 56,
+              backgroundColor: 'black',
+              borderRadius: 16,
+            }}
+            onClick={() => setMenuOpen(false)}
+          >
+            Войти UI!
+          </button>
+        </div>
       </div>
     </header>
   );
