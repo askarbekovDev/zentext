@@ -13,7 +13,7 @@ const Intro = () => {
             Платформа для размещения заказов на швейное производство и оптовые
             покупки одежды с прямым доступом к фабрикам
           </h3>
-          <button className={styles.btn}>ot Aidany</button>
+          <button className={styles.btn}>from UI!</button>
         </div>
         <div className={styles.inTrust}>
           <h5 className={styles.text}>Мы пользуемся доверием у</h5>
@@ -28,7 +28,7 @@ const Intro = () => {
                     backgroundColor: 'white',
                     marginRight: 12,
                   }}
-                />{' '}
+                />
                 {company}
               </div>
             ))}

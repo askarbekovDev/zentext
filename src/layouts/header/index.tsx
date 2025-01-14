@@ -5,7 +5,8 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div style={{display: 'flex', flexDirection: 'row'}}>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        {/* Sleduiushie 2 div prosto placeholdery */}
         <div
           style={{
             width: 56,
@@ -24,9 +25,28 @@ const Header = () => {
           }}
         ></div>
       </div>
-      <div className={styles.links}>
-        <Link href='/factories'>Фабрики</Link>
-        <Link href='/products'>Товары</Link>
+      <div className={styles.navLinks}>
+        <Link href="/factories" className={styles.link}>
+          Фабрики
+        </Link>
+        <Link href="/products" className={styles.link}>
+          Товары
+        </Link>
+      </div>
+      <div className={styles.authBlock}>
+        <Link href="/signIn" className={styles.signUpLink}>
+          Регистрация
+        </Link>
+        <button
+          style={{
+            width: 122,
+            height: 56,
+            backgroundColor: 'black',
+            borderRadius: 16,
+          }}
+        >
+          Войти UI!
+        </button>
       </div>
     </header>
   );
