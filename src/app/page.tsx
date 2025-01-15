@@ -10,17 +10,7 @@ export default function Home() {
     //   <br />
     //   <Status state="new" /><br /><Status state="approved" /><br /><Status state="rejected" />
     //   <br />
-    <>
-      <SearchBar />
-      {/* <SearchBar />
-      <SearchBar />
-      <SearchBar />
-      <SearchBar />
-      <SearchBar />
-      <SearchBar />
-      <SearchBar /> */}
-    </>
     // </div>
-    // <Intro />
+    <Intro />
   );
 }
