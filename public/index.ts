@@ -1,4 +1,13 @@
-export { default as FabricIcon } from './FabricIcon';
-export { default as RequestIcon } from './RequestIcon';
-export { default as UserIcon } from './UserIcon';
-export { default as CommentIcon } from './CommentIcon';
+export { default as FabricIcon } from './fabric-icon';
+export { default as RequestIcon } from './request-icon';
+export { default as UserIcon } from './user-icon';
+export { default as CommentIcon } from './comment-icon';
+export { default as WhatsAppIcon } from './whatsapp-icon';
+export { default as FacebookIcon } from './facebook-icon';
+export { default as InstagramIcon } from './instagram-icon';
+export { default as TelegramIcon } from './telegram-icon';
+export { default as Burger } from './burger-icon';
+export { default as CloseIcon } from './close-icon';
+export { default as MailIcon } from './mail-icon';
+export { default as PhoneIcon } from './phone-icon';
+export { default as MapPinIcon } from './map-pin-icon';

@@ -3,14 +3,13 @@
 import React, { useState } from 'react';
 import styles from './index.module.scss';
 import Link from 'next/link';
-import Burger from '../../../public/Burger';
-import CloseIcon from '../../../public/CloseIcon';
+import { Burger, CloseIcon } from '../../../public/index';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
     <header className={styles.header}>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div style={{ display: 'flex' }}>
         {/* Sleduiushie 2 div prosto placeholdery */}
         <div
           style={{

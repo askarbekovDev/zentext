@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from './index.module.scss';
-import SearchIcon from '../../../public/SearchIcon';
+import SearchIcon from '../../../public/search-icon';
 
 const SearchBar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
