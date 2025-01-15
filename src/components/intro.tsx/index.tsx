@@ -25,23 +25,25 @@ const Intro = () => {
         </h3>
         <button className={styles.btn}>from UI!</button>
       </div>
-      <div className={styles.inTrust}>
-        <h5 className={styles.text}>Мы пользуемся доверием у</h5>
-        <div className={styles.companies}>
-          {companies.map((company, idx) => (
-            <div key={idx} className={styles.company}>
-              <div
-                style={{
-                  minWidth: 48,
-                  minHeight: 48,
-                  borderRadius: 24,
-                  backgroundColor: 'white',
-                  marginRight: 12,
-                }}
-              />
-              <span title={company}>{company}</span>
-            </div>
-          ))}
+      <div className={styles.inTrustWrapper}>
+        <div className={styles.inTrust}>
+          <h5 className={styles.text}>Мы пользуемся доверием у</h5>
+          <div className={styles.companies}>
+            {companies.map((company, idx) => (
+              <div key={idx} className={styles.company}>
+                <div
+                  style={{
+                    minWidth: 48,
+                    minHeight: 48,
+                    borderRadius: 24,
+                    backgroundColor: 'white',
+                    marginRight: 12,
+                  }}
+                />
+                <span title={company}>{company}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Image
