@@ -3,7 +3,13 @@ import styles from './index.module.scss';
 import Image from 'next/image';
 
 const Intro = () => {
-  // const images = [{src: "/images/introImg1.png", value: 186}]
+  const images = [
+    { src: '/images/introImg1.png', value: 186, class: 'imageFirst' },
+    { src: '/images/introImg2.png', value: 222, class: 'imageSecond' },
+    { src: '/images/introImg3.png', value: 254, class: 'imageThird' },
+    { src: '/images/introImg4.png', value: 334, class: 'imageFourth' },
+    { src: '/images/introImg5.png', value: 274, class: 'imageFifth' },
+  ];
   const companies = [
     'LongNameCompany',
     'Solart',
@@ -16,6 +22,8 @@ const Intro = () => {
     'Solart',
     'Solart',
   ];
+  console.log(styles);
+
   return (
     <div className={styles.intro}>
       <div className={styles.content}>
@@ -47,41 +55,16 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <Image
-        className={styles.imageFirst}
-        alt="img"
-        src="/images/introImg1.png"
-        width={186}
-        height={186}
-      />
-      <Image
-        className={styles.imageSecond}
-        alt="img"
-        src="/images/introImg2.png"
-        width={222}
-        height={222}
-      />
-      <Image
-        className={styles.imageThird}
-        alt="img"
-        src="/images/introImg3.png"
-        width={254}
-        height={254}
-      />
-      <Image
-        className={styles.imageFourth}
-        alt="img"
-        src="/images/introImg4.png"
-        width={334}
-        height={334}
-      />
-      <Image
-        className={styles.imageFifth}
-        alt="img"
-        src="/images/introImg5.png"
-        width={274}
-        height={274}
-      />
+      {images.map((img) => (
+        <Image
+          key={img.src}
+          className={styles[img.class]}
+          alt="img"
+          src={img.src}
+          width={img.value}
+          height={img.value}
+        />
+      ))}
     </div>
   );
 };

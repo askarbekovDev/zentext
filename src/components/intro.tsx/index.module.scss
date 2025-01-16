@@ -164,14 +164,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 186px;
-  height: 186px;
   transform: translate(-380px, -425px);
   @media (max-width: 1150px) {
     transform: translate(-340px, -425px);
   }
   @media (max-width: 1000px) {
     transform: translate(-20px, -475px);
+  }
+  @media (max-width: 800px) {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -186,6 +188,10 @@
   @media (max-width: 1000px) {
     transform: translate(210px, -370px);
   }
+  @media (max-width: 800px) {
+    width: 186px;
+    height: 186px;
+  }
 }
 
 .imageThird {
@@ -198,6 +204,10 @@
   }
   @media (max-width: 1000px) {
     transform: translate(-413px, -390px);
+  }
+  @media (max-width: 800px) {
+    width: 218px;
+    height: 218px;
   }
 }
 
@@ -212,6 +222,10 @@
   @media (max-width: 1000px) {
     transform: translate(97px, 60px);
   }
+  @media (max-width: 800px) {
+    width: 298px;
+    height: 298px;
+  }
 }
 
 .imageFifth {
@@ -224,5 +238,9 @@
   }
   @media (max-width: 1000px) {
     transform: translate(-380px, 60px);
+  }
+  @media (max-width: 800px) {
+    width: 238px;
+    height: 238px;
   }
 }
