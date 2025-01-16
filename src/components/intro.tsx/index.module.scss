@@ -8,6 +8,9 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  @media (max-width: 1000px) {
+    height: 985px;
+  }
 }
 
 .content {
@@ -39,6 +42,9 @@
     letter-spacing: -4%;
     text-align: center;
     color: var(--secondary_dark);
+    @media (max-width: 1000px) {
+      top: 300px;
+    }
   }
 
   .subTitle {
@@ -52,11 +58,20 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--secondary_grey);
+    @media (max-width: 1000px) {
+      top: 325px;
+    }
   }
   .btn {
     position: relative;
     top: 270px;
+    width: 188px;
+    border-radius: 16px;
+    height: 56px;
     background-color: var(--secondary_dark);
+    @media (max-width: 1000px) {
+      top: 370px;
+    }
   }
 }
 
@@ -149,7 +164,15 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 186px;
+  height: 186px;
   transform: translate(-380px, -425px);
+  @media (max-width: 1150px) {
+    transform: translate(-340px, -425px);
+  }
+  @media (max-width: 1000px) {
+    transform: translate(-20px, -475px);
+  }
 }
 
 .imageSecond {
@@ -157,6 +180,12 @@
   top: 50%;
   left: 50%;
   transform: translate(370px, -360px);
+  @media (max-width: 1150px) {
+    transform: translate(310px, -360px);
+  }
+  @media (max-width: 1000px) {
+    transform: translate(210px, -370px);
+  }
 }
 
 .imageThird {
@@ -164,6 +193,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-573px, -250px);
+  @media (max-width: 1150px) {
+    transform: translate(-513px, -230px);
+  }
+  @media (max-width: 1000px) {
+    transform: translate(-413px, -390px);
+  }
 }
 
 .imageFourth {
@@ -171,6 +206,12 @@
   top: 50%;
   left: 50%;
   transform: translate(256px, -60px);
+  @media (max-width: 1150px) {
+    transform: translate(195px, -30px);
+  }
+  @media (max-width: 1000px) {
+    transform: translate(97px, 60px);
+  }
 }
 
 .imageFifth {
@@ -178,4 +219,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-410px, 10px);
+  @media (max-width: 1150px) {
+    transform: translate(-410px, 30px);
+  }
+  @media (max-width: 1000px) {
+    transform: translate(-380px, 60px);
+  }
 }

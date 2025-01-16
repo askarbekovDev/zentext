@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import Image from 'next/image';
 
 const Intro = () => {
+  // const images = [{src: "/images/introImg1.png", value: 186}]
   const companies = [
     'LongNameCompany',
     'Solart',
