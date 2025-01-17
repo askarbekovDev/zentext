@@ -12,7 +12,7 @@ const Intro = () => {
   ];
   const companies = [
     'LongNameCompany',
-    'Solart',
+    'LG',
     'Solart',
     'Solart',
     'Solart',
