@@ -34,7 +34,6 @@ const Filter: FC = () => {
       icon: (isActive: boolean) => <CommentIcon isActive={isActive} />,
     },
   ];
-
   return (
     <div className={styles.filter}>
       {filterItems.map((item) => (

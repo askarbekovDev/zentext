@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import styles from './index.module.scss';
 import SearchIcon from '../../../public/search-icon';
 
-const SearchBar = () => {
+const SearchBar: FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
     <div className={`${styles.search} ${menuOpen ? styles.searchOpen : ''}`}>

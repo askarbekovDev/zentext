@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-type UserIconType = {
+type UserIconProps = {
   isActive?: boolean;
 };
 
-const UserIcon: React.FC<UserIconType> = ({ isActive }) => {
+const UserIcon: FC<UserIconProps> = ({ isActive }) => {
   return (
     <svg
       width="17"

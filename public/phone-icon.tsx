@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const PhoneIcon = () => {
+const PhoneIcon: FC = () => {
   return (
     <svg
       width="24"

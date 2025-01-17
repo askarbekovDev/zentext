@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const SearchIcon = () => {
+const SearchIcon: FC = () => {
   return (
     <svg
       width="21"

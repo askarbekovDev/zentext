@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 
-type TelegramIconType = {
+type TelegramIconProps = {
   fill?: string;
-}
+};
 
-const TelegramIcon: FC<TelegramIconType> = ({fill}) => {
+const TelegramIcon: FC<TelegramIconProps> = ({ fill }) => {
   return (
     <svg
       width="24"
@@ -16,7 +16,7 @@ const TelegramIcon: FC<TelegramIconType> = ({fill}) => {
       <g clipPath="url(#clip0_39_10806)">
         <path
           d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15"
-          stroke={fill ? fill : "#FAF9F6"}
+          stroke={fill ? fill : '#FAF9F6'}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

@@ -1,10 +1,10 @@
 import React from 'react';
 
-type FactoryIconType = {
+type FactoryIconProps = {
   isActive?: boolean;
 };
 
-const FactoryIcon: React.FC<FactoryIconType> = ({ isActive }) => {
+const FactoryIcon: React.FC<FactoryIconProps> = ({ isActive }) => {
   return (
     <svg
       width="21"

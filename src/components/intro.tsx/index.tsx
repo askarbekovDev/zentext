@@ -19,10 +19,7 @@ const Intro: FC = () => {
     'Solart',
     'Solart',
     'Solart',
-    'Solart',
-    'Solart',
   ];
-
   return (
     <div className={styles.intro}>
       <div className={styles.content}>

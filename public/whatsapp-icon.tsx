@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const WhatsAppIcon = () => {
+const WhatsAppIcon: FC = () => {
   return (
     <svg
       width="24"

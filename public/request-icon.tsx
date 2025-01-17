@@ -1,10 +1,10 @@
 import React from 'react';
 
-type RequestIconType = {
+type RequestIconProps = {
   isActive?: boolean;
 };
 
-const RequestIcon: React.FC<RequestIconType> = ({ isActive }) => {
+const RequestIcon: React.FC<RequestIconProps> = ({ isActive }) => {
   return (
     <svg
       width="17"

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const MapPinIcon = () => {
+const MapPinIcon: FC = () => {
   return (
     <svg
       width="24"

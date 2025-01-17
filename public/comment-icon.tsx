@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-type CommentIconType = {
+type CommentIconProps = {
   isActive?: boolean;
 };
 
-const CommentIcon: React.FC<CommentIconType> = ({ isActive }) => {
+const CommentIcon: FC<CommentIconProps> = ({ isActive }) => {
   return (
     <svg
       width="23"
