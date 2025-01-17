@@ -1,12 +1,22 @@
-import React from 'react'
-import styles from './index.module.scss'
+import React, { FC } from 'react';
+import styles from './index.module.scss';
 
-const Status = ({ state = 'new' }: { state: 'new' | 'approved' | 'rejected' }) => {
+type StatusProps = {
+  state: 'new' | 'approved' | 'rejected';
+};
+
+const Status: FC<StatusProps> = ({ state = 'new' }) => {
   return (
-    <div className={`${styles.status} ${(state === 'approved') ? styles.approved : (state === 'rejected') ? styles.rejected : styles.new}`}>
-      {(state === 'approved') ? 'Одобрен' : (state === 'rejected') ? 'Отклонен' : 'Новый'}
+    <div
+      className={`${styles.status} ${state === 'approved' ? styles.approved : state === 'rejected' ? styles.rejected : styles.new}`}
+    >
+      {state === 'approved'
+        ? 'Одобрен'
+        : state === 'rejected'
+          ? 'Отклонен'
+          : 'Новый'}
     </div>
-  )
-}
+  );
+};
 
 export default Status;
