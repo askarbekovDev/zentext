@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './index.module.scss';
 import Image from 'next/image';
 
-const Intro = () => {
+const Intro: FC = () => {
   const images = [
     { src: '/images/intro-img-1.svg', value: 222, class: 'imageFirst' },
     { src: '/images/intro-img-2.svg', value: 255, class: 'imageSecond' },

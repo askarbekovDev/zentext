@@ -1,22 +1,38 @@
 'use client';
 
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import styles from './index.module.scss';
 import {
   RequestIcon,
   UserIcon,
-  FabricIcon,
+  FactoryIcon,
   CommentIcon,
 } from '../../../public';
 
-const Filter = () => {
+const Filter: FC = () => {
   const [active, setActive] = useState('requests');
 
   const filterItems = [
-    { id: 'requests', label: 'Заявки', icon: (isActive: boolean) => <RequestIcon isActive={isActive} /> },
-    { id: 'fabrics', label: 'Фабрики', icon: (isActive: boolean) => <FabricIcon isActive={isActive} /> },
-    { id: 'users', label: 'Пользователи', icon: (isActive: boolean) => <UserIcon isActive={isActive} /> },
-    { id: 'comments', label: 'Отзывы', icon: (isActive: boolean) => <CommentIcon isActive={isActive} /> },
+    {
+      id: 'requests',
+      label: 'Заявки',
+      icon: (isActive: boolean) => <RequestIcon isActive={isActive} />,
+    },
+    {
+      id: 'factories',
+      label: 'Фабрики',
+      icon: (isActive: boolean) => <FactoryIcon isActive={isActive} />,
+    },
+    {
+      id: 'users',
+      label: 'Пользователи',
+      icon: (isActive: boolean) => <UserIcon isActive={isActive} />,
+    },
+    {
+      id: 'comments',
+      label: 'Отзывы',
+      icon: (isActive: boolean) => <CommentIcon isActive={isActive} />,
+    },
   ];
 
   return (

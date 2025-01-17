@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import styles from './index.module.scss';
 import Link from 'next/link';
 import { Burger, CloseIcon } from '../../../public/index';
 
-const Header = () => {
+const Header: FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
     <header className={styles.header}>

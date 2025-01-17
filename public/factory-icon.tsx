@@ -1,10 +1,10 @@
 import React from 'react';
 
-type FabricIconType = {
+type FactoryIconType = {
   isActive?: boolean;
 };
 
-const FabricIcon: React.FC<FabricIconType> = ({ isActive }) => {
+const FactoryIcon: React.FC<FactoryIconType> = ({ isActive }) => {
   return (
     <svg
       width="21"
@@ -31,4 +31,4 @@ const FabricIcon: React.FC<FabricIconType> = ({ isActive }) => {
   );
 };
 
-export default FabricIcon;
+export default FactoryIcon;

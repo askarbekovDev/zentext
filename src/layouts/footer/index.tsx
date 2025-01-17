@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './index.module.scss';
 import Link from 'next/link';
 import {
@@ -11,7 +11,7 @@ import {
   WhatsAppIcon,
 } from '../../../public/index';
 
-const Footer = () => {
+const Footer: FC = () => {
   const socialMedia = [
     { icon: <WhatsAppIcon />, href: '/' },
     { icon: <InstagramIcon />, href: '/' },

@@ -1,4 +1,4 @@
-export { default as FabricIcon } from './fabric-icon';
+export { default as FactoryIcon } from './factory-icon';
 export { default as RequestIcon } from './request-icon';
 export { default as UserIcon } from './user-icon';
 export { default as CommentIcon } from './comment-icon';
