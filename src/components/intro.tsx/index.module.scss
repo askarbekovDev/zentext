@@ -17,6 +17,9 @@
   @media (max-width: 700px) {
     height: 1060px;
   }
+  @media (max-width: 450px) {
+    height: 920px;
+  }
 }
 
 .content {
@@ -57,6 +60,11 @@
     @media (max-width: 700px) {
       font-size: 48px;
     }
+    @media (max-width: 450px) {
+      font-size: 35px;
+      width: 320px;
+      top: 240px;
+    }
   }
 
   .subTitle {
@@ -75,6 +83,11 @@
     @media (max-width: 900px) {
       width: 400px;
     }
+    @media (max-width: 450px) {
+      font-size: 15px;
+      width: 310px;
+      top: 260px;
+    }
   }
   .btn {
     position: relative;
@@ -88,6 +101,9 @@
     }
     @media (max-width: 700px) {
       top: 360px;
+    }
+    @media (max-width: 450px) {
+      top: 300px;
     }
   }
 }
@@ -126,6 +142,7 @@
       height: 146px;
       padding: 10px 20px;
     }
+
     .text {
       width: 146px;
       color: var(--secondary_light);
@@ -139,6 +156,9 @@
         font-weight: 600;
         text-align: center;
         margin: 10px 0;
+      }
+      @media (max-width: 450px) {
+        font-size: 16px;
       }
     }
   }
@@ -205,6 +225,10 @@
       width: 152px;
       height: 152px;
     }
+    @media (max-width: 450px) {
+      width: 122px;
+      height: 122px;
+    }
   }
 
   .imageSecond {
@@ -233,6 +257,11 @@
     @media (max-width: 570px) {
       transform: translate(90px, -320px);
     }
+    @media (max-width: 450px) {
+      transform: translate(55px, -360px);
+      width: 140px;
+      height: 140px;
+    }
   }
 
   .imageThird {
@@ -260,6 +289,11 @@
     }
     @media (max-width: 570px) {
       transform: translate(-240px, -350px);
+    }
+    @media (max-width: 450px) {
+      transform: translate(-180px, -385px);
+      height: 150px;
+      width: 150px;
     }
   }
 
@@ -291,6 +325,11 @@
     @media (max-width: 570px) {
       transform: translate(-2px, 175px);
     }
+    @media (max-width: 450px) {
+      transform: translate(-4px, 85px);
+      width: 195px;
+      height: 195px;
+    }
   }
 
   .imageFifth {
@@ -318,6 +357,11 @@
     }
     @media (max-width: 570px) {
       transform: translate(-235px, 170px);
+    }
+    @media (max-width: 450px) {
+      transform: translate(-180px, 60px);
+      width: 158px;
+      height: 158px;
     }
   }
 }
