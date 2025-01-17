@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 const Intro = () => {
   const images = [
-    { src: '/images/introImg1.png', value: 186, class: 'imageFirst' },
-    { src: '/images/introImg2.png', value: 222, class: 'imageSecond' },
-    { src: '/images/introImg3.png', value: 254, class: 'imageThird' },
-    { src: '/images/introImg4.png', value: 334, class: 'imageFourth' },
-    { src: '/images/introImg5.png', value: 274, class: 'imageFifth' },
+    { src: '/images/intro-img-1.svg', value: 222, class: 'imageFirst' },
+    { src: '/images/intro-img-2.svg', value: 255, class: 'imageSecond' },
+    { src: '/images/intro-img-3.svg', value: 284, class: 'imageThird' },
+    { src: '/images/intro-img-4.svg', value: 375, class: 'imageFourth' },
+    { src: '/images/intro-img-5.svg', value: 318, class: 'imageFifth' },
   ];
   const companies = [
     'LongNameCompany',
@@ -22,7 +22,6 @@ const Intro = () => {
     'Solart',
     'Solart',
   ];
-  console.log(styles);
 
   return (
     <div className={styles.intro}>
@@ -55,16 +54,18 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      {images.map((img) => (
-        <Image
-          key={img.src}
-          className={styles[img.class]}
-          alt="img"
-          src={img.src}
-          width={img.value}
-          height={img.value}
-        />
-      ))}
+      <div className={styles.imgWrapper}>
+        {images.map((img) => (
+          <Image
+            key={img.src}
+            className={styles[img.class]}
+            alt="img"
+            src={img.src}
+            width={img.value}
+            height={img.value}
+          />
+        ))}
+      </div>
     </div>
   );
 };

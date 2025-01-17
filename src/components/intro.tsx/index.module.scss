@@ -4,12 +4,18 @@
   align-items: center;
   max-width: 1440px;
   width: 100%;
-  height: 945px;
+  height: 1020px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  @media (max-width: 1000px) {
-    height: 985px;
+  @media (max-width: 1100px) {
+    height: 1060px;
+  }
+  @media (max-width: 900px) {
+    height: 1100px;
+  }
+  @media (max-width: 700px) {
+    height: 1060px;
   }
 }
 
@@ -34,43 +40,54 @@
   }
   .mainTitle {
     position: relative;
-    top: 200px;
-    max-width: 833px;
-    width: 100%;
+    top: 230px;
+    width: 750px;
     font-weight: 600;
-    font-size: 62px;
-    letter-spacing: -4%;
+    font-size: 68px;
+    letter-spacing: -1px;
     text-align: center;
     color: var(--secondary_dark);
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
       top: 300px;
+    }
+    @media (max-width: 900px) {
+      font-size: 58px;
+      width: 520px;
+    }
+    @media (max-width: 700px) {
+      font-size: 48px;
     }
   }
 
   .subTitle {
     position: relative;
-    top: 225px;
-    max-width: 600px;
-    width: 100%;
+    top: 255px;
+    width: 600px;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     text-align: center;
     color: var(--secondary_grey);
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
       top: 325px;
+    }
+    @media (max-width: 900px) {
+      width: 400px;
     }
   }
   .btn {
     position: relative;
-    top: 270px;
+    top: 310px;
     width: 188px;
     border-radius: 16px;
     height: 56px;
     background-color: var(--secondary_dark);
-    @media (max-width: 1000px) {
-      top: 370px;
+    @media (max-width: 1100px) {
+      top: 380px;
+    }
+    @media (max-width: 700px) {
+      top: 360px;
     }
   }
 }
@@ -160,87 +177,147 @@
   }
 }
 
-.imageFirst {
+.imgWrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-380px, -425px);
-  @media (max-width: 1150px) {
-    transform: translate(-340px, -425px);
+  top: 470px;
+  @media (max-width: 1100px) {
+    top: 490px;
   }
-  @media (max-width: 1000px) {
-    transform: translate(-20px, -475px);
-  }
-  @media (max-width: 800px) {
-    width: 150px;
-    height: 150px;
-  }
-}
 
-.imageSecond {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(370px, -360px);
-  @media (max-width: 1150px) {
-    transform: translate(310px, -360px);
+  .imageFirst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-440px, -425px);
+    @media (max-width: 1250px) {
+      transform: translate(-340px, -425px);
+      width: 202px;
+      height: 202px;
+    }
+    @media (max-width: 1100px) {
+      transform: translate(-20px, -460px);
+    }
+    @media (max-width: 900px) {
+      width: 172px;
+      height: 172px;
+    }
+    @media (max-width: 700px) {
+      width: 152px;
+      height: 152px;
+    }
   }
-  @media (max-width: 1000px) {
-    transform: translate(210px, -370px);
-  }
-  @media (max-width: 800px) {
-    width: 186px;
-    height: 186px;
-  }
-}
 
-.imageThird {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-573px, -250px);
-  @media (max-width: 1150px) {
-    transform: translate(-513px, -230px);
+  .imageSecond {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(410px, -335px);
+    @media (max-width: 1250px) {
+      transform: translate(340px, -335px);
+      width: 235px;
+      height: 235px;
+    }
+    @media (max-width: 1100px) {
+      transform: translate(260px, -370px);
+    }
+    @media (max-width: 900px) {
+      transform: translate(195px, -340px);
+      width: 190px;
+      height: 190px;
+    }
+    @media (max-width: 700px) {
+      transform: translate(150px, -320px);
+      width: 170px;
+      height: 170px;
+    }
+    @media (max-width: 570px) {
+      transform: translate(90px, -320px);
+    }
   }
-  @media (max-width: 1000px) {
-    transform: translate(-413px, -390px);
-  }
-  @media (max-width: 800px) {
-    width: 218px;
-    height: 218px;
-  }
-}
 
-.imageFourth {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(256px, -60px);
-  @media (max-width: 1150px) {
-    transform: translate(195px, -30px);
+  .imageThird {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-643px, -200px);
+    @media (max-width: 1250px) {
+      transform: translate(-553px, -200px);
+      width: 264px;
+      height: 264px;
+    }
+    @media (max-width: 1100px) {
+      transform: translate(-460px, -400px);
+    }
+    @media (max-width: 900px) {
+      transform: translate(-365px, -370px);
+      width: 200px;
+      height: 200px;
+    }
+    @media (max-width: 700px) {
+      transform: translate(-300px, -350px);
+      width: 180px;
+      height: 180px;
+    }
+    @media (max-width: 570px) {
+      transform: translate(-240px, -350px);
+    }
   }
-  @media (max-width: 1000px) {
-    transform: translate(97px, 60px);
-  }
-  @media (max-width: 800px) {
-    width: 298px;
-    height: 298px;
-  }
-}
 
-.imageFifth {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-410px, 10px);
-  @media (max-width: 1150px) {
-    transform: translate(-410px, 30px);
+  .imageFourth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(276px, -17px);
+    @media (max-width: 1250px) {
+      transform: translate(219px, 30px);
+      width: 355px;
+      height: 355px;
+    }
+    @media (max-width: 1100px) {
+      transform: translate(160px, 85px);
+      width: 325px;
+      height: 325px;
+    }
+    @media (max-width: 900px) {
+      transform: translate(107px, 185px);
+      width: 275px;
+      height: 275px;
+    }
+    @media (max-width: 700px) {
+      transform: translate(60px, 175px);
+      width: 255px;
+      height: 255px;
+    }
+    @media (max-width: 570px) {
+      transform: translate(-2px, 175px);
+    }
   }
-  @media (max-width: 1000px) {
-    transform: translate(-380px, 60px);
-  }
-  @media (max-width: 800px) {
-    width: 238px;
-    height: 238px;
+
+  .imageFifth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-470px, 60px);
+    @media (max-width: 1250px) {
+      transform: translate(-430px, 60px);
+      width: 278px;
+      height: 278px;
+    }
+    @media (max-width: 1100px) {
+      transform: translate(-415px, 100px);
+    }
+    @media (max-width: 900px) {
+      transform: translate(-345px, 180px);
+      width: 218px;
+      height: 218px;
+    }
+    @media (max-width: 700px) {
+      transform: translate(-295px, 170px);
+      width: 198px;
+      height: 198px;
+    }
+    @media (max-width: 570px) {
+      transform: translate(-235px, 170px);
+    }
   }
 }
