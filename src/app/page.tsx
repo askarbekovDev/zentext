@@ -3,6 +3,7 @@ import Status from '../ui/status/index';
 import SearchBar from '@/ui/searchBar';
 import Intro from '@/components/intro.tsx';
 import AboutProject from '@/components/aboutProject';
+import OurGoals from '@/components/ourGoals';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SearchBar/> */}
       <Intro />
       <AboutProject />
+      <OurGoals />
     </div>
   );
 }

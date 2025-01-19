@@ -11,3 +11,7 @@ export { default as CloseIcon } from './close-icon';
 export { default as MailIcon } from './mail-icon';
 export { default as PhoneIcon } from './phone-icon';
 export { default as MapPinIcon } from './map-pin-icon';
+export { default as SearchIconSecond } from './search-icon-second';
+export { default as solarTagIcon } from './solar-tag-icon';
+export { default as starIcon } from './star-icon';
+export { default as threeUsersIcon } from './three-users-icon';
