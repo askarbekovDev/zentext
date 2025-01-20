@@ -200,6 +200,7 @@
 .imgWrapper {
   position: absolute;
   top: 470px;
+  pointer-events: none;
   @media (max-width: 1100px) {
     top: 490px;
   }

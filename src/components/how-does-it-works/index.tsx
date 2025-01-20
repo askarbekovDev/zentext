@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './index.module.scss';
 import {
   RadiusBottomLeft,
@@ -7,7 +7,7 @@ import {
   RadiusTopRight,
 } from '../../../public';
 
-const HowDoesItWorks = () => {
+const HowDoesItWorks: FC = () => {
   return (
     <div className="container">
       <div className={styles.content}>

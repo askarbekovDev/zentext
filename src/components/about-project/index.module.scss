@@ -24,6 +24,7 @@
     position: absolute;
     margin-right: -80px;
     top: 70px;
+    pointer-events: none;
     @media (max-width: 1200px) {
       width: 850px;
       height: 850px;

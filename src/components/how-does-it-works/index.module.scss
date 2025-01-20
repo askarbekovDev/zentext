@@ -171,6 +171,7 @@
       position: absolute;
       top: 146.5px;
       width: 100%;
+      pointer-events: none;
       .line {
         background-color: var(--secondary_light);
         margin-inline: 170px;
@@ -185,6 +186,7 @@
       position: absolute;
       top: 314.5px;
       width: 100%;
+      pointer-events: none;
       .line {
         background-color: var(--secondary_light);
         margin-inline: 170px;
@@ -199,6 +201,7 @@
       position: absolute;
       top: 482.5px;
       width: 100%;
+      pointer-events: none;
       .line {
         background-color: var(--secondary_light);
         margin-inline: 170px;
@@ -213,6 +216,7 @@
       position: absolute;
       top: 119.5px;
       left: 143px;
+      pointer-events: none;
       @media (max-width: 370px) {
         left: 123px;
       }
@@ -221,6 +225,7 @@
       position: absolute;
       top: -27.5px;
       left: 120px;
+      pointer-events: none;
       @media (max-width: 370px) {
         left: 96px;
       }
@@ -229,6 +234,7 @@
       position: absolute;
       top: 119.5px;
       left: 120px;
+      pointer-events: none;
       @media (max-width: 370px) {
         left: 96px;
       }
@@ -237,6 +243,7 @@
       position: absolute;
       top: -27.5px;
       left: 143px;
+      pointer-events: none;
       @media (max-width: 370px) {
         left: 123px;
       }
@@ -245,6 +252,7 @@
       position: absolute;
       top: 119.5px;
       left: 143px;
+      pointer-events: none;
       @media (max-width: 370px) {
         left: 123px;
       }
@@ -253,6 +261,7 @@
       position: absolute;
       top: -27.5px;
       left: 120px;
+      pointer-events: none;
       @media (max-width: 370px) {
         left: 96px;
       }
