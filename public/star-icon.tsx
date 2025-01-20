@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const starIcon = () => {
+const StarIcon: FC = () => {
   return (
     <svg
       width="28"
@@ -10,16 +10,16 @@ const starIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M15.2883 4.87321L17.4203 9.13242C17.6292 9.55056 18.0325 9.84049 18.5002 9.90759L23.2696 10.5941C24.4479 10.7642 24.9168 12.1923 24.064 13.0106L20.6152 16.3246C20.2763 16.6504 20.122 17.1189 20.2022 17.579L21.0161 22.2575C21.2165 23.4148 19.9847 24.2978 18.9315 23.7503L14.6687 21.5398C14.2509 21.323 13.7504 21.323 13.3313 21.5398L9.0685 23.7503C8.01527 24.2978 6.78346 23.4148 6.98512 22.2575L7.79782 17.579C7.878 17.1189 7.72372 16.6504 7.38479 16.3246L3.93596 13.0106C3.08317 12.1923 3.55208 10.7642 4.73044 10.5941L9.49976 9.90759C9.96746 9.84049 10.372 9.55056 10.5809 9.13242L12.7117 4.87321C13.2389 3.82009 14.7611 3.82009 15.2883 4.87321Z"
         stroke="#130F26"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
 };
 
-export default starIcon;
+export default StarIcon;
