@@ -54,11 +54,11 @@ const HowDoesItWorks = () => {
               <p>3</p>
               <p>Найдите фабрику и отправьте заявку</p>
               <div className={styles.vectorBottomLeftTwo}>
-              <RadiusBottomLeft />
-            </div>
+                <RadiusBottomLeft />
+              </div>
             </div>
             <div className={styles.stepFour}>
-            <div className={styles.vectorTopRightTwo}>
+              <div className={styles.vectorTopRightTwo}>
                 <RadiusTopRight />
               </div>
               <p>4</p>

@@ -2,9 +2,9 @@ import Filter from '@/ui/filter';
 import Status from '../ui/status/index';
 import SearchBar from '@/ui/searchBar';
 import Intro from '@/components/intro.tsx';
-import AboutProject from '@/components/aboutProject';
-import OurGoals from '@/components/ourGoals';
-import HowDoesItWorks from '@/components/howDoesItWorks';
+import AboutProject from '@/components/about-project';
+import OurGoals from '@/components/our-goals';
+import HowDoesItWorks from '@/components/how-does-it-works';
 
 export default function Home() {
   return (
@@ -22,6 +22,9 @@ export default function Home() {
       <AboutProject />
       <OurGoals />
       <HowDoesItWorks />
+      <div style={{height: 200, backgroundColor: 'grey', textAlign: 'center', fontSize: 60}}>Factories</div>
+      <br />
+      <div style={{height: 200, backgroundColor: 'grey', textAlign: 'center', fontSize: 60}}>Requests</div>
     </div>
   );
 }

@@ -10,11 +10,11 @@
     height: 980px;
   }
   @media (max-width: 700px) {
-    padding-top: 50px;
+    padding-top: 60px;
     height: 950px;
   }
   @media (max-width: 500px) {
-    padding-top: 30px;
+    padding-top: 40px;
     height: 930px;
   }
 
@@ -69,7 +69,11 @@
     width: 100%;
     height: 100%;
     margin-top: 80px;
+    @media (max-width: 500px) {
+      margin-top: 60px;
+    }
     @media (max-width: 370px) {
+      margin-top: 40px;
     }
     .steps {
       width: 100%;
