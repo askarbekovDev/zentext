@@ -5,15 +5,17 @@
   width: 100%;
   height: 1050px;
   padding-top: 96px;
-  // background-color: rgb(61, 125, 131);
   @media (max-width: 1000px) {
     padding-top: 76px;
+    height: 980px;
   }
   @media (max-width: 700px) {
     padding-top: 50px;
+    height: 950px;
   }
   @media (max-width: 500px) {
     padding-top: 30px;
+    height: 930px;
   }
 
   .mainText {
@@ -67,6 +69,8 @@
     width: 100%;
     height: 100%;
     margin-top: 80px;
+    @media (max-width: 370px) {
+    }
     .steps {
       width: 100%;
       height: 100%;
@@ -100,8 +104,8 @@
         z-index: 10;
         @media (max-width: 370px) {
           width: 250px;
-          height: 128px;
         }
+
         p {
           color: var(--secondary_light);
         }
@@ -121,7 +125,6 @@
         background-color: var(--secondary_light);
         @media (max-width: 370px) {
           width: 250px;
-          height: 128px;
         }
       }
 
@@ -137,6 +140,9 @@
         height: 128px;
         border-radius: 30px;
         background-color: var(--secondary_light);
+        @media (max-width: 370px) {
+          width: 250px;
+        }
       }
 
       .stepFour {
@@ -151,6 +157,9 @@
         height: 128px;
         border-radius: 30px;
         background-color: var(--secondary_light);
+        @media (max-width: 370px) {
+          width: 250px;
+        }
       }
     }
 
@@ -241,7 +250,7 @@
       top: -27.5px;
       left: 120px;
       @media (max-width: 370px) {
-        left: 143px;
+        left: 96px;
       }
     }
   }
