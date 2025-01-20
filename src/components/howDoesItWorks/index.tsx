@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import {
   RadiusBottomLeft,
   RadiusBottomRight,
+  RadiusTopLeft,
   RadiusTopRight,
 } from '../../../public';
 
@@ -47,10 +48,19 @@ const HowDoesItWorks = () => {
               </div>
             </div>
             <div className={styles.stepThree}>
+              <div className={styles.vectorTopLeft}>
+                <RadiusTopLeft />
+              </div>
               <p>3</p>
               <p>Найдите фабрику и отправьте заявку</p>
+              <div className={styles.vectorBottomLeftTwo}>
+              <RadiusBottomLeft />
+            </div>
             </div>
             <div className={styles.stepFour}>
+            <div className={styles.vectorTopRightTwo}>
+                <RadiusTopRight />
+              </div>
               <p>4</p>
               <p>Свяжитесь и обсудите детали через WhatsApp</p>
             </div>
