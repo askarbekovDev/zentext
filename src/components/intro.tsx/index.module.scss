@@ -255,9 +255,19 @@
       height: 170px;
     }
     @media (max-width: 570px) {
-      transform: translate(90px, -320px);
+      transform: translate(100px, -320px);
     }
     @media (max-width: 450px) {
+      transform: translate(95px, -360px);
+      width: 140px;
+      height: 140px;
+    }
+    @media (max-width: 400px) {
+      transform: translate(75px, -360px);
+      width: 140px;
+      height: 140px;
+    }
+    @media (max-width: 360px) {
       transform: translate(55px, -360px);
       width: 140px;
       height: 140px;
@@ -288,9 +298,19 @@
       height: 180px;
     }
     @media (max-width: 570px) {
-      transform: translate(-240px, -350px);
+      transform: translate(-250px, -350px);
     }
     @media (max-width: 450px) {
+      transform: translate(-220px, -385px);
+      height: 150px;
+      width: 150px;
+    }
+    @media (max-width: 400px) {
+      transform: translate(-200px, -385px);
+      height: 150px;
+      width: 150px;
+    }
+    @media (max-width: 360px) {
       transform: translate(-180px, -385px);
       height: 150px;
       width: 150px;
@@ -323,9 +343,19 @@
       height: 255px;
     }
     @media (max-width: 570px) {
-      transform: translate(-2px, 175px);
+      transform: translate(10px, 175px);
     }
     @media (max-width: 450px) {
+      transform: translate(32px, 85px);
+      width: 195px;
+      height: 195px;
+    }
+    @media (max-width: 400px) {
+      transform: translate(12px, 85px);
+      width: 195px;
+      height: 195px;
+    }
+    @media (max-width: 360px) {
       transform: translate(-4px, 85px);
       width: 195px;
       height: 195px;
@@ -356,9 +386,19 @@
       height: 198px;
     }
     @media (max-width: 570px) {
-      transform: translate(-235px, 170px);
+      transform: translate(-245px, 170px);
     }
     @media (max-width: 450px) {
+      transform: translate(-215px, 60px);
+      width: 158px;
+      height: 158px;
+    }
+    @media (max-width: 400px) {
+      transform: translate(-195px, 60px);
+      width: 158px;
+      height: 158px;
+    }
+    @media (max-width: 360px) {
       transform: translate(-180px, 60px);
       width: 158px;
       height: 158px;

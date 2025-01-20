@@ -23,14 +23,19 @@ const OurGoals: FC = () => {
   return (
     <div className="container">
       <div className={styles.content}>
-        <p>Наши цели и преимущества</p>
-        <div className={styles.description}></div>
-        {description.map((item, idx) => (
-          <div key={idx} className={styles.theItem}>
-            <div className={styles.wrapper}>{item.icon}</div>
-            <p className={styles.title}>{item.title}</p>
-          </div>
-        ))}
+        <p className={styles.headTitle}>Наши цели и преимущества</p>
+        <div className={styles.description}>
+          {description.map((item, idx) => (
+            <div key={idx} className={styles.theItem}>
+              <div
+                className={`${styles.wrapper} ${idx === 0 ? styles.bgrndDark : ''}`}
+              >
+                {item.icon}
+              </div>
+              <p className={styles.title}>{item.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
