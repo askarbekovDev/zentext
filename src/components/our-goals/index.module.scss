@@ -9,13 +9,15 @@
     color: var(--secondary_grey);
     margin-bottom: 40px;
     @media (max-width: 1000px) {
-      font-family: Inter;
-      font-size: 42px;
+      font-size: 46px;
       line-height: 38.73px;
     }
     @media (max-width: 700px) {
-      font-size: 32px;
+      font-size: 40px;
       margin-bottom: 24px;
+    }
+    @media (max-width: 500px) {
+      font-size: 32px;
     }
   }
 

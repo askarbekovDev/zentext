@@ -13,6 +13,13 @@ const ContactUs: FC = () => {
           width={1280}
           height={853}
         />
+        <div className={styles.contactUs}>
+          <h1>Готовы начать?</h1>
+          <h3>
+            Свяжитесь с нами и найдите идеальную фабрику для вашего бизнеса!
+          </h3>
+          <button>from UI</button>
+        </div>
       </div>
     </div>
   );

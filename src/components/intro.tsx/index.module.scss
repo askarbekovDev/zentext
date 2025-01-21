@@ -61,9 +61,13 @@
       font-size: 48px;
     }
     @media (max-width: 450px) {
+      font-size: 40px;
+      width: 100%;
+      top: 240px;
+    }
+    @media (max-width: 390px) {
       font-size: 35px;
       width: 320px;
-      top: 240px;
     }
   }
 
@@ -72,23 +76,27 @@
     top: 255px;
     width: 600px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0;
+    letter-spacing: -0.02em;
     text-align: center;
     color: var(--secondary_grey);
     @media (max-width: 1100px) {
+      font-size: 18px;
       top: 325px;
     }
     @media (max-width: 900px) {
-      width: 400px;
+      width: 500px;
+    }
+    @media (max-width: 700px) {
+      width: 450px;
     }
     @media (max-width: 450px) {
-      font-size: 15px;
       width: 310px;
       top: 260px;
     }
   }
+
   .btn {
     position: relative;
     top: 310px;

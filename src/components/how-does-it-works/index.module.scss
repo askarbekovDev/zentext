@@ -11,11 +11,11 @@
   }
   @media (max-width: 700px) {
     padding-top: 60px;
-    height: 950px;
+    height: 870px;
   }
   @media (max-width: 500px) {
     padding-top: 40px;
-    height: 930px;
+    height: 830px;
   }
 
   .mainText {
@@ -57,7 +57,6 @@
         width: 400px;
       }
       @media (max-width: 450px) {
-        font-size: 16px;
         width: 100%;
       }
     }
@@ -88,9 +87,13 @@
         letter-spacing: -0.02em;
         text-align: center;
         color: var(--secondary_dark);
-        @media (max-width: 370px) {
-          margin-inline: 10px;
+        @media (max-width: 1000px) {
           font-size: 18px;
+          margin-inline: 42px;
+        }
+        @media (max-width: 700px) {
+          font-size: 16px;
+          margin-inline: 29px;
         }
       }
 
@@ -106,8 +109,9 @@
         border-radius: 30px;
         background-color: var(--secondary_dark);
         z-index: 10;
-        @media (max-width: 370px) {
+        @media (max-width: 700px) {
           width: 250px;
+          height: 108px;
         }
 
         p {
@@ -127,8 +131,10 @@
         height: 128px;
         border-radius: 30px;
         background-color: var(--secondary_light);
-        @media (max-width: 370px) {
+        @media (max-width: 700px) {
           width: 250px;
+          height: 108px;
+          top: 148px;
         }
       }
 
@@ -144,8 +150,10 @@
         height: 128px;
         border-radius: 30px;
         background-color: var(--secondary_light);
-        @media (max-width: 370px) {
+        @media (max-width: 700px) {
           width: 250px;
+          height: 108px;
+          top: 296px;
         }
       }
 
@@ -161,8 +169,10 @@
         height: 128px;
         border-radius: 30px;
         background-color: var(--secondary_light);
-        @media (max-width: 370px) {
+        @media (max-width: 700px) {
           width: 250px;
+          height: 108px;
+          top: 444px;
         }
       }
     }
@@ -172,11 +182,14 @@
       top: 146.5px;
       width: 100%;
       pointer-events: none;
+      @media (max-width: 700px) {
+        top: 126.5px;
+      }
       .line {
         background-color: var(--secondary_light);
         margin-inline: 170px;
         height: 3px;
-        @media (max-width: 370px) {
+        @media (max-width: 700px) {
           margin-inline: 140px;
         }
       }
@@ -187,11 +200,14 @@
       top: 314.5px;
       width: 100%;
       pointer-events: none;
+      @media (max-width: 700px) {
+        top: 274.5px;
+      }
       .line {
         background-color: var(--secondary_light);
         margin-inline: 170px;
         height: 3px;
-        @media (max-width: 370px) {
+        @media (max-width: 700px) {
           margin-inline: 140px;
         }
       }
@@ -202,11 +218,14 @@
       top: 482.5px;
       width: 100%;
       pointer-events: none;
+      @media (max-width: 700px) {
+        top: 422.5px;
+      }
       .line {
         background-color: var(--secondary_light);
         margin-inline: 170px;
         height: 3px;
-        @media (max-width: 370px) {
+        @media (max-width: 700px) {
           margin-inline: 140px;
         }
       }
@@ -217,8 +236,9 @@
       top: 119.5px;
       left: 143px;
       pointer-events: none;
-      @media (max-width: 370px) {
+      @media (max-width: 700px) {
         left: 123px;
+        top: 99.5px;
       }
     }
     .vectorTopRight {
@@ -226,7 +246,7 @@
       top: -27.5px;
       left: 120px;
       pointer-events: none;
-      @media (max-width: 370px) {
+      @media (max-width: 700px) {
         left: 96px;
       }
     }
@@ -235,8 +255,9 @@
       top: 119.5px;
       left: 120px;
       pointer-events: none;
-      @media (max-width: 370px) {
+      @media (max-width: 700px) {
         left: 96px;
+        top: 99.5px;
       }
     }
     .vectorTopLeft {
@@ -244,7 +265,7 @@
       top: -27.5px;
       left: 143px;
       pointer-events: none;
-      @media (max-width: 370px) {
+      @media (max-width: 700px) {
         left: 123px;
       }
     }
@@ -253,8 +274,9 @@
       top: 119.5px;
       left: 143px;
       pointer-events: none;
-      @media (max-width: 370px) {
+      @media (max-width: 700px) {
         left: 123px;
+        top: 99.5px;
       }
     }
     .vectorTopRightTwo {
@@ -262,7 +284,7 @@
       top: -27.5px;
       left: 120px;
       pointer-events: none;
-      @media (max-width: 370px) {
+      @media (max-width: 700px) {
         left: 96px;
       }
     }

@@ -79,11 +79,14 @@
       line-height: 80px;
       letter-spacing: -0.04em;
       @media (max-width: 1000px) {
-        font-size: 44px;
+        font-size: 46px;
       }
       @media (max-width: 700px) {
-        font-size: 32px;
+        font-size: 40px;
         line-height: 38.73px;
+      }
+      @media (max-width: 500px) {
+        font-size: 32px;
       }
     }
 
@@ -95,12 +98,13 @@
       color: var(--secondary_grey);
       margin-top: 24px;
       @media (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media (max-width: 700px) {
         font-size: 18px;
       }
-      @media (max-width: 600px) {
+      @media (max-width: 500px) {
         font-size: 16px;
-      }
-      @media (max-width: 600px) {
         margin-top: 18px;
       }
     }
