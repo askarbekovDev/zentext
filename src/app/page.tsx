@@ -6,6 +6,7 @@ import AboutProject from '@/components/about-project';
 import OurGoals from '@/components/our-goals';
 import HowDoesItWorks from '@/components/how-does-it-works';
 import ContactUs from '@/components/contact-us';
+import LeaveRequest from '@/components/leave-request';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <br />
       <div style={{height: 200, backgroundColor: 'grey', textAlign: 'center', fontSize: 60}}>Requests</div>
       <ContactUs />
+      <LeaveRequest />
     </div>
   );
 }
