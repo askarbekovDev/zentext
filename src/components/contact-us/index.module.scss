@@ -2,52 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 484px;
-  overflow: hidden;
-  border-radius: 40px;
-  pointer-events: none;
   position: relative;
-  margin-block: 100px;
-  @media (max-width: 800px) {
-    height: 408px;
-    margin-block: 80px;
-  }
-  @media (max-width: 550px) {
-    justify-content: flex-start;
-    margin-block: 60px;
-  }
-
-  .backgroundImg {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    @media (max-width: 1000px) {
-      left: -10px;
-      width: 950;
-      height: 633px;
-    }
-    @media (max-width: 800px) {
-      left: 0;
-      width: auto;
-      height: 480px;
-    }
-    @media (max-width: 550px) {
-      height: 100%;
-      left: -95px;
-    }
-    @media (max-width: 440px) {
-      left: -105px;
-    }
-  }
-
   .contactUs {
     display: flex;
     flex-direction: column;
-    top: 116px;
-    width: 476px;
     align-items: center;
     justify-content: flex-start;
     position: absolute;
+    width: 476px;
+    z-index: 20;
+    @media (max-width: 1000px) {
+      width: 396px;
+    }
+    @media (max-width: 500px) {
+      width: 310px;
+    }
 
     h1 {
       font-size: 52px;
@@ -58,12 +27,13 @@
       @media (max-width: 1000px) {
         font-size: 46px;
         line-height: 38.73px;
+        text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.9);
       }
       @media (max-width: 700px) {
-        font-size: 40px;
+        font-size: 42px;
       }
       @media (max-width: 500px) {
-        font-size: 32px;
+        font-size: 33px;
       }
     }
     h3 {
@@ -73,6 +43,12 @@
       letter-spacing: -0.02em;
       text-align: center;
       color: var(--secondary_grey);
+      @media (max-width: 1000px) {
+        font-size: 18px;
+      }
+      @media (max-width: 500px) {
+        font-size: 16px;
+      }
     }
     button {
       width: 248px;
@@ -81,6 +57,49 @@
       border-radius: 16px;
       background-color: var(--secondary_dark);
       border: 0;
+    }
+  }
+
+  .imgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 484px;
+    overflow: hidden;
+    border-radius: 40px;
+    pointer-events: none;
+    position: relative;
+    margin-block: 100px;
+    @media (max-width: 800px) {
+      height: 408px;
+      margin-block: 80px;
+    }
+    @media (max-width: 550px) {
+      justify-content: flex-start;
+      margin-block: 60px;
+    }
+
+    .backgroundImg {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      @media (max-width: 1000px) {
+        left: -10px;
+        width: 950;
+        height: 633px;
+      }
+      @media (max-width: 800px) {
+        left: 0;
+        width: auto;
+        height: 480px;
+      }
+      @media (max-width: 550px) {
+        height: 100%;
+        left: -95px;
+      }
+      @media (max-width: 440px) {
+        left: -105px;
+      }
     }
   }
 }
