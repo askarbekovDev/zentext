@@ -2,11 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1080;
+  max-width: 1080;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 260px;
 
   .description {
     display: flex;
     flex-direction: column;
+    width: 476px;
 
     h1 {
       font-size: 52px;
@@ -19,5 +23,10 @@
       line-height: 24px;
       letter-spacing: -0.02em;
     }
+  }
+
+  .sendRequest {
+    display: flex;
+    width: 375px;
   }
 }

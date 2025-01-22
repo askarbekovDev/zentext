@@ -12,9 +12,11 @@ const LeaveRequest = () => {
             продукцию. Укажите детали, и мы свяжемся с вами в ближайшее время.
           </h3>
         </div>
+        <div className={styles.sendRequest}>kqfnjejfjw</div>
       </div>
     </div>
   );
 };
 
 export default LeaveRequest;
+
