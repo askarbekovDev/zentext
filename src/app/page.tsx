@@ -7,6 +7,8 @@ import OurGoals from '@/components/our-goals';
 import HowDoesItWorks from '@/components/how-does-it-works';
 import ContactUs from '@/components/contact-us';
 import LeaveRequest from '@/components/leave-request';
+import Factories from '@/components/factories';
+import Reviews from '@/components/reviews';
 
 export default function Home() {
   return (
@@ -24,11 +26,10 @@ export default function Home() {
       <AboutProject />
       <OurGoals />
       <HowDoesItWorks />
-      <div style={{height: 200, backgroundColor: 'grey', textAlign: 'center', fontSize: 60}}>Factories</div>
-      <br />
-      <div style={{height: 200, backgroundColor: 'grey', textAlign: 'center', fontSize: 60}}>Requests</div>
+      <Factories />
+      <Reviews />
       <ContactUs />
-      <LeaveRequest />
+      {/* <LeaveRequest /> */}
     </div>
   );
 }

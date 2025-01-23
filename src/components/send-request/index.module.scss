@@ -1,0 +1,35 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 375px;
+  // background-color: orange;
+
+  .fullName {
+    width: 375px;
+    height: 52px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 1px solid #cfd3d4;
+    background-color: transparent;
+    padding-inline: 16px;
+    outline: none;
+    color: var(--secondary_dark);
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.36px;
+      color: #ABAFB1;
+    }
+  }
+
+  .phoneNumberWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .numCode {
+
+    }
+  }
+}

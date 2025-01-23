@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './index.module.scss';
+import SendRequest from '../send-request';
 
-const LeaveRequest = () => {
+const LeaveRequest: FC = () => {
   return (
     <div className="container">
       <div className={styles.content}>
@@ -12,11 +13,10 @@ const LeaveRequest = () => {
             продукцию. Укажите детали, и мы свяжемся с вами в ближайшее время.
           </h3>
         </div>
-        <div className={styles.sendRequest}>kqfnjejfjw</div>
+        <SendRequest />
       </div>
     </div>
   );
 };
 
 export default LeaveRequest;
-
