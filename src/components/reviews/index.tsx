@@ -6,18 +6,34 @@ import styles from './index.module.scss';
 const CustomSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slides: string[] = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h'
+  const slides: {}[] = [
+    {
+      feedback:
+        'Работать с этой фабрикой было настоящим удовольствием! Высокое качество продукции и внимательное отношение к каждому заказу. Вся наша партия была выполнена в срок.',
+      factory: 'Швейная фабрика "Элеганс',
+      grade: '5'
+    },
+    {
+      feedback:
+        'Работать с этой фабрикой было настоящим удовольствием! Высокое качество продукции и внимательное отношение к каждому заказу. Вся наша партия была выполнена в срок.',
+      factory: 'Швейная фабрика "Элеганс',
+      grade: '5'
+    },
+    {
+      feedback:
+        'Работать с этой фабрикой было настоящим удовольствием! Высокое качество продукции и внимательное отношение к каждому заказу. Вся наша партия была выполнена в срок.',
+      factory: 'Швейная фабрика "Элеганс',
+      grade: '5'
+    },
+    {
+      feedback:
+        'Работать с этой фабрикой было настоящим удовольствием! Высокое качество продукции и внимательное отношение к каждому заказу. Вся наша партия была выполнена в срок.',
+      factory: 'Швейная фабрика "Элеганс',
+      grade: '5'
+    },
   ];
 
-  const groupedSlides = slides.reduce<string[][]>((result, slide, index) => {
+  const groupedSlides = slides.reduce<{}[][]>((result, slide, index) => {
     const groupIndex = Math.floor(index / 3);
     if (!result[groupIndex]) result[groupIndex] = [];
     result[groupIndex].push(slide);
@@ -25,15 +41,11 @@ const CustomSlider = () => {
   }, []);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => prevIndex - 1);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => prevIndex + 1);
   };
 
   return (
@@ -49,7 +61,7 @@ const CustomSlider = () => {
           >
             {groupedSlides.map((slide, index) => (
               <div key={index} className={styles.slide}>
-                {slide}
+                {/* {slide} */}yeye
               </div>
             ))}
           </div>
@@ -66,7 +78,7 @@ const CustomSlider = () => {
         <button
           className={`${styles.arrow} ${styles.next}`}
           onClick={handleNext}
-          disabled={currentIndex === Math.ceil((slides.length) / 3) - 1}
+          disabled={currentIndex === Math.ceil(slides.length / 3) - 1}
         >
           ❯
         </button>
