@@ -22,13 +22,12 @@ export default function Home() {
       <Status state="rejected" />
       <br />
       <SearchBar/> */}
-      <Reviews />
       <Intro />
       <AboutProject />
       <OurGoals />
       <HowDoesItWorks />
       <Factories />
-      
+      <Reviews />
       <ContactUs />
       {/* <LeaveRequest /> */}
     </div>

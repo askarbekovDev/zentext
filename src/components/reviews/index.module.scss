@@ -1,93 +1,125 @@
-.mainTitle {
-  font-size: 52px;
-  font-weight: 600;
-  line-height: 62.93px;
-  text-align: center;
-  margin-block: 40px;
-}
-
-.sliderContainer {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-
-  // .sliderWrapper {
-  //   overflow: hidden;
-  //   width: 100%;
-  //   background-color: green;
-  // }
-
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+.content {
+  .mainTitle {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62.93px;
+    text-align: center;
+    margin: 120px 0 40px;
+    @media (max-width: 1000px) {
+      font-size: 46px;
+      margin: 100px 0 35px;
+    }
+    @media (max-width: 700px) {
+      font-size: 42px;
+      line-height: 40px;
+      margin: 80px 0 30px;
+    }
+    @media (max-width: 500px) {
+      font-size: 32px;
+      margin: 60px 0 24px;
+    }
   }
 
-  .slide {
-    max-width: 100%;
-    min-width: 99%;
-    height: 210px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-around;
+  .sliderContainer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 
-    .reviewWrap {
+    .slides {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      max-width: 320px;
-      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
 
-      .reviewGrade {
+    .slide {
+      max-width: 100%;
+      min-width: 100%;
+      height: fit-content;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+      gap: 35px;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .reviewWrap {
         display: flex;
-        gap: 25px;
-        margin-bottom: 20px;
-      }
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 320px;
+        min-height: 196px;
+        width: 100%;
+        @media (max-width: 1000px) {
+          max-width: 98%;
+          min-height: auto;
+        }
 
-      .reviewFeedback {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #282828;
-        height: 120px;
-        flex-shrink: 0;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        line-clamp: 5;
-        -webkit-box-orient: vertical;
-      }
+        .reviewGrade {
+          display: flex;
+          gap: 25px;
+          margin-bottom: 20px;
+          @media (max-width: 1000px) {
+            margin-bottom: 10px;
+          }
+        }
 
-      .factory {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 16.8px;
-        margin-top: 24px;
+        .reviewFeedback {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #282828;
+          height: 120px;
+          flex-shrink: 0;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          line-clamp: 5;
+          -webkit-box-orient: vertical;
+          @media (max-width: 1000px) {
+            height: auto;
+          }
+        }
+
+        .factory {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24.8px;
+          margin-top: 20px;
+          @media (max-width: 1000px) {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
-}
 
-.btnWrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
-  margin-top: 45px;
-
-  button {
+  .btnWrap {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    &:focus {
-      outline: 2px solid var(--secondary_dark);
-      border-radius: 4px;
+    gap: 35px;
+    margin-top: 45px;
+    @media (max-width: 1000px) {
+      margin-top: 24px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      &:focus {
+        outline: 2px solid var(--secondary_dark);
+        border-radius: 5px;
+      }
     }
   }
 }
