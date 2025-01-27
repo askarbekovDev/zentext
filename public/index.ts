@@ -19,3 +19,5 @@ export { default as RadiusBottomLeft } from './radius-bottom-left';
 export { default as RadiusBottomRight } from './radius-bottom-right';
 export { default as RadiusTopLeft } from './radius-top-left';
 export { default as RadiusTopRight } from './radius-top-right';
+export { default as ArrowRight } from './arrow-right';
+export { default as ArrowLeft } from './arrow-left';
