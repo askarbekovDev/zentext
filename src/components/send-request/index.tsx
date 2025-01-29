@@ -87,7 +87,7 @@ const SendRequest = () => {
         </div>
         <input
           className={`${styles.phoneNumber} ${errors.phoneNumber ? styles.inputError : ''}`}
-          type="text"
+          type="number"
           {...register('phoneNumber')}
           value={errors['phoneNumber']?.message || data['phoneNumber']}
           placeholder="707 707 707"

@@ -60,7 +60,7 @@ const Footer: FC = () => {
             })}
           </div>
         </div>
-        <p className={styles.rights}>© 2024 Все права защищены.</p>
+        <p className={styles.rights}>© 2025 Все права защищены.</p>
       </div>
       <div className={styles.parent}>
         <div className={styles.navLinks}>
@@ -104,7 +104,7 @@ const Footer: FC = () => {
         <TelegramIcon fill={'black'} />
         <span>Написать нам 24/7</span>
       </Link>
-      <p className={styles.rightsMob}>© 2024 Все права защищены.</p>
+      <p className={styles.rightsMob}>© 2025 Все права защищены.</p>
     </footer>
   );
 };
