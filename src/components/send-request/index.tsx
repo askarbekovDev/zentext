@@ -61,9 +61,7 @@ const SendRequest = () => {
   const handleFocus = (fieldName: keyof FormData) => {
     clearErrors(fieldName);
   };
-  console.log(errors);
   
-
   return (
     <form className={styles.content} onSubmit={handleSubmit(onSubmit)}>
       <input
