@@ -61,6 +61,8 @@ const SendRequest = () => {
   const handleFocus = (fieldName: keyof FormData) => {
     clearErrors(fieldName);
   };
+  console.log(errors);
+  
 
   return (
     <form className={styles.content} onSubmit={handleSubmit(onSubmit)}>
@@ -87,7 +89,7 @@ const SendRequest = () => {
         </div>
         <input
           className={`${styles.phoneNumber} ${errors.phoneNumber ? styles.inputError : ''}`}
-          type="number"
+          type="tel"
           {...register('phoneNumber')}
           value={errors['phoneNumber']?.message || data['phoneNumber']}
           placeholder="707 707 707"
