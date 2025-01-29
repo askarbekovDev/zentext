@@ -29,7 +29,7 @@ export default function Home() {
       <Factories />
       <Reviews />
       <ContactUs />
-      {/* <LeaveRequest /> */}
+      <LeaveRequest />
     </div>
   );
 }

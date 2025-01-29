@@ -4,6 +4,7 @@
   align-items: center;
   color: var(--secondary_light);
   margin-top: 10px;
+  font-family: Inter;
 
   .title {
     width: 100%;
@@ -144,7 +145,7 @@
           justify-content: space-between;
           width: 100%;
           font-size: 14px;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 24px;
           letter-spacing: -0.02em;
           @media (max-width: 570px) {
@@ -175,6 +176,9 @@
               overflow: hidden;
               white-space: nowrap;
               text-overflow: ellipsis;
+              font-size: 14px;
+              font-weight: 400;
+              letter-spacing: -0.02em;
             }
           }
 
@@ -191,7 +195,7 @@
           white-space: nowrap;
           text-overflow: ellipsis;
           font-size: 20px;
-          font-weight: 600;
+          font-weight: 500;
           line-height: 24px;
           letter-spacing: -0.02em;
           @media (max-width: 570px) {
@@ -210,7 +214,7 @@
         .phoneNumber {
           display: block;
           font-size: 14px;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 24px;
           letter-spacing: -0.02em;
           overflow: hidden;
@@ -229,7 +233,7 @@
         .adress {
           display: block;
           font-size: 14px;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 24px;
           letter-spacing: -0.02em;
           overflow: hidden;
@@ -255,10 +259,11 @@
       background-color: var(--secondary_dark);
       border: none;
       margin-top: 40px;
+      font-family: inherit;
       font-size: 20px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 24px;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
       @media (max-width: 570px) {
         margin-top: 24px;
         width: 48%;
