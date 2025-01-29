@@ -59,6 +59,7 @@
     bottom: 110px;
     left: 80px;
     width: 51%;
+    pointer-events: none;
     @media (max-width: 1200px) {
       left: 60px;
       bottom: 100px;

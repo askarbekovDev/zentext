@@ -4,6 +4,7 @@
   justify-content: center;
   position: relative;
   padding-top: 130px;
+  pointer-events: none;
   @media (max-width: 1000px) {
     padding-top: 96px;
   }

@@ -5,6 +5,7 @@
     line-height: 62.93px;
     text-align: center;
     margin: 120px 0 40px;
+    pointer-events: none;
     @media (max-width: 1000px) {
       font-size: 46px;
       margin: 100px 0 35px;
@@ -53,6 +54,7 @@
         max-width: 320px;
         min-height: 196px;
         width: 100%;
+        pointer-events: none;
         @media (max-width: 1000px) {
           max-width: 98%;
           min-height: auto;

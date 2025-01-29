@@ -9,6 +9,7 @@
     color: var(--secondary_grey);
     margin-bottom: 40px;
     margin-top: 20px;
+    pointer-events: none;
     @media (max-width: 1000px) {
       font-size: 46px;
       line-height: 38.73px;
@@ -26,6 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
+    pointer-events: none;
     @media (max-width: 1030px) {
       gap: 20px;
     }
