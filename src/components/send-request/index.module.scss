@@ -72,6 +72,9 @@
       font-weight: 400;
       line-height: 19.36px;
       color: var(--secondary_dark);
+      @media (max-width: 330px) {
+        padding-inline: 14px;
+      }
       &::placeholder {
         font-size: 16px;
         font-weight: 400;
